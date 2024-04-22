@@ -1,6 +1,6 @@
 # Multi Track Music Generation Using Generative Adversarial Networks
 
-This is the final group project of the "Neural Networks and Deep Learning" course at the University of Padua. The project was developed by a group composed of Stefano Campagnola, Sebastiano Monti, and myself.
+This is the final group project for the "Neural Networks and Deep Learning" course at the University of Padua. The project was developed by a group composed of Stefano Campagnola, Sebastiano Monti, and myself.
 
 In this project, we explore the complex task of generating music using state-of-the-art models based on generative adversarial networks. The architecture we implemented can generate piano rolls of mono and multi-instrumental polyphonic music, both from scratch and conditioned on a previous sample.
 
@@ -19,4 +19,4 @@ If you are interested in generating samples, the `GAN weights` folder contains t
 
 The `Generated_Samples` and `losses` folders contain some generated MIDI samples and the loss functions associated with the performed training processes, respectively.
 
-For more detailed information, please refer to the project’s report: `Multi_Track_Music_Generation_Using_Generative_Adversarial_Networks.pdf`.
+For more detailed information, please refer to the project’s report:`Multi_Track_Music_Generation_Using_Generative_Adversarial_Networks.pdf`.
