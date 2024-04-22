@@ -1,25 +1,22 @@
 # Multi Track Music Generation Using Generative Adversarial Networks
 
-This is the final group project of "Neural Networks and Deep Learning" course, held at University of Padua. 
-The group that developed the project was composed by Eleonora Bergamin, Stefano Campagnola and me.
+This is the final group project of the "Neural Networks and Deep Learning" course at the University of Padua. The project was developed by a group composed of Stefano Campagnola, Sebastiano Monti, and myself.
 
-In this project, we investigate the complex task of generating music using state-of-the-art models, based on generative adversarial networks. 
-The implemented architecture is capable of generating piano-rolls of mono and multi-instrumental polyphonic music both from scratch and conditioned on a previous sample.
+In this project, we explore the complex task of generating music using state-of-the-art models based on generative adversarial networks. The architecture we implemented can generate piano rolls of mono and multi-instrumental polyphonic music, both from scratch and conditioned on a previous sample.
 
-The model was trained on two different datasets containing both mono and multi-track MIDI samples. 
-- In the first case, the **[unlabelled VGMIDI](https://github.com/lucasnfe/vgmidi/tree/master)** dataset was used, encompassing piano samples. 
-- In the second case, the **[LPD 5 cleansed](https://www.kaggle.com/datasets/cloudoak/lpd-5-cleansed)** dataset was used, including samples of bass, drums, guitar, piano, and strings.
+The model was trained on two different datasets, containing respectively mono and multi-track MIDI samples.
+- In the first case, we used the **[unlabeled VGMIDI](https://github.com/lucasnfe/vgmidi/tree/master)** dataset, which includes piano samples.
+- In the second case, we used the **[LPD 5 cleansed](https://www.kaggle.com/datasets/cloudoak/lpd-5-cleansed)** dataset, which includes samples of bass, drums, guitar, piano, and strings.
 
-Objective evaluation metrics were then implemented to evaluate the quality of generated music.
+We then implemented objective evaluation metrics to assess the quality of the music generated.
 
-The main files to run this project are the following:
-- `Generating_Music_With_GANs.ipynb` contains data pre-processing and visualization, training procedure for the model, and metrics' evaluation.
-- `models.py` contains the models' architectures.
-- `metrics.py` contains the functions defining the metrics.
+The main files needed to run this project are the following:
+- `Generating_Music_With_GANs.ipynb`,  which contains data pre-processing and visualization, the training procedure for the model, and metrics evaluation.
+- `models.py`, which contains the architectures of the models.
+- `metrics.py`, which contains the functions defining the metrics.
+  
+If you are interested in generating samples, the `GAN weights` folder contains the weights of the trained models. The file names summarize the fixed training parameters and the architecture of the used model.
 
-In case someone was interested just in generating some samples, in `GAN weights` folder, the weights of the trained models are contained.
-File names summarize in some way the fixed training parameters and used model's architecture.
+The `Generated_Samples` and `losses` folders contain some generated MIDI samples and the loss functions associated with the performed training processes, respectively.
 
-`Generated_Samples` and `losses` folders respectively contain some generated midi samples and the loss functions associated to the performed training processes.
-
-For more detailed information rely on project's report: `Multi_Track_Music_Generation_Using_Generative_Adversarial_Networks.pdf`.
+For more detailed information, please refer to the project’s report: `Multi_Track_Music_Generation_Using_Generative_Adversarial_Networks.pdf`.
